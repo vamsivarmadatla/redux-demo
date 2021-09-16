@@ -67,19 +67,24 @@ const UserContainer = () => {
       <Col>
         <Container>
           <div>
-            <h1 className="main-title">redux</h1>
+            <h3 className="main-title">
+              <strong>Redux Example</strong>
+            </h3>
             <div>
               <>
                 {totalCount && totalCount > 0 ? (
-                  <div className="show-fetch-data-details mt-4 mb-4">
+                  <div className="show-fetch-data-details  mb-2">
                     Showing {startCount} - {endCount} of top
                     <strong>{totalCount} Users </strong>
-                    available
                   </div>
                 ) : null}
 
                 {currentPosts.length ? (
-                  currentPosts?.map((user) => <p key={user.id}>{user.title}</p>)
+                  currentPosts?.map((user) => (
+                    <p key={user.id} className="user-list">
+                      {user.title}
+                    </p>
+                  ))
                 ) : (
                   <Loader />
                 )}

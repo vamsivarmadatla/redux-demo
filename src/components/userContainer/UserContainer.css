@@ -11,5 +11,11 @@
 
 .show-fetch-data-details {
   background-color: #d5ecdb !important;
-  padding: 10px 0 !important;
+  padding: 5px 0 !important;
+}
+
+.user-list {
+  text-align: left !important;
+  border: 2px solid #d5ecdb !important;
+  padding: 3px 0 !important;
 }
